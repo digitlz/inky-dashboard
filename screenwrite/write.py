@@ -5,7 +5,7 @@ import sys
 
 import inkyphat
 
-inkyphat.set_colour('black')
+inkyphat.set_colour('yellow')
 
 inkyphat.set_border(inkyphat.BLACK)
 
