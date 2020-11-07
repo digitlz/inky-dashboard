@@ -6,17 +6,20 @@ I had an [inky pHat](https://shop.pimoroni.com/products/inky-phat?variant=125492
 The approach is to have a website based on Angular that is fully customisable to develop components that you could then put on the eInk display.  
 This works by compiling the website, running a python server, taking a screenshot in the correct resolution
 
+![alt text](img/image.jpg "Logo Title Text 1")
+
+
 ## TBD
 - [ ] The PNG should be only black, white and red. It needs a conversion to make sure it is more compatible with the eInk display.
 - [ ] The setup below has to be more detailed.
 
 # Setup
 
-- Install inky pHat libraries
+- Install inky pHat libraries (https://github.com/pimoroni/inky-phat)
 
 - npm i
 
-- setup pupeteer
+- setup pupeteer-core for raspberry pi
 ```bash
 sudo apt install chromium-browser chromium-codecs-ffmpeg
 sudo install npm
