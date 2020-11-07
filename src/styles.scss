@@ -2,3 +2,19 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+@font-face {
+    font-family: 'pressStart';
+    src: url('assets/fonts/Press_Start_2P/PressStart2P-Regular.ttf');
+  }
+
+body {
+    font-family: 'pressStart';
+}
+
+.Component {
+  font-size: 10px;
+  border: 2px solid black;
+  padding: 1px 2px;
+  margin: 1px;
+}
