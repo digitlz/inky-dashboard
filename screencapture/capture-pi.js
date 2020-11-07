@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer-core');
     height: 104,
     deviceScaleFactor: 1,
   });
-  await page.goto('http://localhost:4200');
+  await page.goto('http://localhost:8123');
   await page.screenshot({path: 'screencapture/screen.png'});
 
   await browser.close();
