@@ -13,8 +13,8 @@
     "write-screen": "python3 screenwrite/write.py",
     "run-python-server": "cd dist/inky-dashboard && bash -c 'exec -a pythonServer python -m SimpleHTTPServer 8123 &'",
     "kill-server": "kill -9 `ps -ef |grep SimpleHTTPServer |grep 8123 |awk '{print $2}'`",
-    "capture-and-write-test": "npm run-s build && npm run run-python-server && sleep 2 && npm run-s capture && npm run-s kill-server && echo 'done'",
-    "capture-and-write": "npm run-s build && npm run run-python-server && sleep 2 && npm run-s capture-pi && npm run write-screen && npm run-s kill-server"
+    "capture-and-write-test": "npm run run-python-server && sleep 2 && npm run-s capture && npm run-s kill-server && echo 'done'",
+    "capture-and-write": "npm run run-python-server && sleep 2 && npm run-s capture-pi && npm run write-screen && npm run-s kill-server"
   },
   "private": true,
   "dependencies": {

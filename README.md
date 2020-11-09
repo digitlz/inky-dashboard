@@ -15,6 +15,7 @@ This works by compiling the website, running a python server, taking a screensho
 
 # Setup
 
+## Basic setup
 - Install inky pHat libraries (https://github.com/pimoroni/inky-phat)
 
 - npm i
@@ -30,3 +31,7 @@ const puppeteer = require('puppeteer-core');
 const browser = await puppeteer.launch({executablePath: '/usr/bin/chromium-browser'});
 ```
 (Source: https://www.youtube.com/watch?v=6LnJ1zW5464)
+
+## How to display content
+- build first with `npm run build`
+- display with `npm run capture-and-write` (run as cronjob to display regularly)
