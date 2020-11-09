@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DateComponent } from './components/date/date.component';
 import { TimeComponent } from './components/time/time.component';
+import { WeatherComponent } from './components/weather/weather.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     DateComponent,
-    TimeComponent
+    TimeComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

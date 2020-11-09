@@ -33,5 +33,6 @@ const browser = await puppeteer.launch({executablePath: '/usr/bin/chromium-brows
 (Source: https://www.youtube.com/watch?v=6LnJ1zW5464)
 
 ## How to display content
+- rename `src/app/components/weather/weather_api.example.ts` to `weather_api.ts` and add `apiKey` from https://openweathermap.org/api
 - build first with `npm run build`
 - display with `npm run capture-and-write` (run as cronjob to display regularly)
