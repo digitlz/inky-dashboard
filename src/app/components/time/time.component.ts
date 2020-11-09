@@ -13,7 +13,7 @@ export class TimeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.currentTime = moment().format('HH:MM');
+    this.currentTime = moment().format('HH:mm');
   }
 
 }
