@@ -9,30 +9,17 @@ This works by compiling the website, running a python server, taking a screensho
 ![alt text](img/image.jpg "Logo Title Text 1")
 
 
-## TBD
-- [ ] The PNG should be only black, white and red. It needs a conversion to make sure it is more compatible with the eInk display.
-- [ ] The setup below has to be more detailed.
-
 # Setup
 
 ## Basic setup
 - Install inky pHat libraries (https://github.com/pimoroni/inky-phat)
-
-- npm i
-
-- setup pupeteer-core for raspberry pi
+- Install packages with `npm i`
+- Setup chromium-browser on the Raspberry Pi
 ```bash
 sudo apt install chromium-browser chromium-codecs-ffmpeg
-sudo install npm
-npm install puppeteer-core@v1.11.0
-
-const puppeteer = require('puppeteer-core');
-
-const browser = await puppeteer.launch({executablePath: '/usr/bin/chromium-browser'});
 ```
-(Source: https://www.youtube.com/watch?v=6LnJ1zW5464)
 
-## How to display content
-- rename `src/app/components/weather/weather_api.example.ts` to `weather_api.ts` and add `apiKey` from https://openweathermap.org/api
-- build first with `npm run build`
-- display with `npm run capture-and-write` (run as cronjob to display regularly)
+## How to run it
+- Rename `src/app/components/weather/weather_api.example.ts` to `weather_api.ts` and add your `apiKey` from https://openweathermap.org/api
+- Build with `npm run build` on the Raspberry Pi
+- Display with `npm run capture-and-write` (run as cronjob to display regularly)
