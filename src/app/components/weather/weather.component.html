@@ -1,7 +1,10 @@
 <div class="Component align-content-center" *ngIf="weatherToday">
-    Weather today in {{ location }}:<br/>
+    Weather for {{ location }}:<br/>
     Currently: {{ weatherToday.temp | number: '1.1-1' }}°C <br/>
     Max {{ weatherToday.temp_max | number: '1.1-1' }}°C | Min {{ weatherToday.temp_min | number: '1.1-1' }}°C
+</div>
+<div class="Component align-content-center" *ngIf="weatherToday">
+    Humidity: {{ weatherToday.humidity | number: '1.1-1' }}%
 </div>
 <div class="Component align-content-center" *ngIf="weatherTomorrow">
     Temp tomorrow: {{ weatherTomorrow.temp | number: '1.1-1' }}°C

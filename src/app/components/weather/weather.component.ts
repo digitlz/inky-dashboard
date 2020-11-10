@@ -12,7 +12,7 @@ import { apiKey } from './weather_api';
 })
 export class WeatherComponent implements OnInit {
 
-  public location: string = 'Zürich';
+  public location: string = 'Zollikerberg';
   public weatherToday: Weather;
   public weatherTomorrow: Weather;
 
